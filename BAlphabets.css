@@ -1,0 +1,35 @@
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.calculator {  
+  width: 450px;
+  margin: 30px auto;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+
+.calculator button {
+  width: 70px;
+  height: 70px;
+  font-weight: 600;
+  font-size: 30px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.calculator button:hover {
+  background-color: #f1f1f1;
+}
+
+.display {
+  font-size: 35px;
+  height: 60px;
+  font-weight: 600;
+  line-height: 60px;
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+}
