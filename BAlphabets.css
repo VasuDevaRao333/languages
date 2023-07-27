@@ -33,3 +33,21 @@ body {
   background-color: #f1f1f1;
   margin-bottom: 10px;
 }
+
+.container {
+      text-align: center;
+      cursor: pointer;
+      border: 2px solid #333;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin: 0;
+	  color: green;
+    }
+	p{
+	color: red;
+	font-size : 20px;
+	}
