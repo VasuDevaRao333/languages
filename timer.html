@@ -3,52 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alternate Alphabets Display</title>
+    <title>Alphabet Game</title>
     <style>
 	body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-}
-
-.content {
     text-align: center;
 }
 
-h1 {
-    font-size: 130px;
-    color: white;
-	background-color: blue;
-	width: 300px;
-	height: 200px;
-	text-align: center;
-	border-radius: 10px;
+.container {
+    margin-top: 100px;
 }
 
+#output {
+    font-size: 100px;
+    color: #007BFF;
+    font-weight: bold;
+}
 
 	</style>
 </head>
 <body>
- 
-    <div class="content">
-        <h1 id="alphabet">অ</h1>
+    <div class="container">
+        <div id="output"></div>
     </div>
     <script>
-	const alphabets = ["অ","ঈ","হ","অ","আ","শ","ঈ","ঋ","হ","ল","ঐ","ছ","গ","ম","ও","ভ","দ","ক","ঞ","ব","গ","ন","ছ","দ","ঝ","ণ","ঞ","ঘ","ই","ড","ঙ","ঔ","স","উ","ষ","ঊ","প","র","এ","ঙ","য","ঔ","ফ","খ","প","ঘ","ধ","ঙ","থ","চ","ত","জ","ঢ","ট","ঠ","ঞ"];
+	const alphabet = 'অআঈঋঐওকগছঝঞডণদনবভমলশহইউঊএঔখঘঙচজটঠঢতথধপফযরষসঅঈহঅআশঈঋহলঐছগমওভদকঞবগনছদঝণঞঘইডঙঔসউষঊপরএঙযঔফখপঘধঙথচতজঢটঠঞ';
+const jsonData = '';
+const container = document.querySelector('.container');
+const output = document.getElementById('output');
 
 let currentIndex = 0;
+let isAlphabet = true;
 
-function displayNextAlphabet() {
-    document.getElementById("alphabet").textContent = alphabets[currentIndex];
-    currentIndex = (currentIndex + 1) % alphabets.length;
+function displayData() {
+    if (isAlphabet) {
+        output.textContent = alphabet[currentIndex];
+    } else {
+        output.textContent = jsonData;
+    }
+
+    currentIndex = (currentIndex + 1) % alphabet.length;
+    isAlphabet = !isAlphabet;
 }
 
-setInterval(displayNextAlphabet, 2000); // Change alphabet every second
+// Display the first item
+displayData();
 
+// Set an interval to switch between alphabet and JSON every 2 seconds
+setInterval(displayData, 1000);
 
 	</script>
 </body>
