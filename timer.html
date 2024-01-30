@@ -3,54 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alphabet Game</title>
+    <title>Alternate Alphabets Display</title>
     <style>
 	body {
     font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.content {
     text-align: center;
 }
 
-.container {
-    margin-top: 100px;
+h1 {
+    font-size: 130px;
+    color: white;
+	background-color: blue;
+	width: 300px;
+	height: 200px;
+	text-align: center;
+	border-radius: 10px;
 }
 
-#output {
-    font-size: 100px;
-    color: #007BFF;
-    font-weight: bold;
-}
 
 	</style>
 </head>
 <body>
-    <div class="container">
-        <div id="output"></div>
+ 
+    <div class="content">
+        <h1 id="alphabet">ஆ</h1>
     </div>
     <script>
-	const alphabet = 'অআঈঋঐওকগছঝঞডণদনবভমলশহইউঊএঔখঘঙচজটঠঢতথধপফযরষসঅঈহঅআশঈঋহলঐছগমওভদকঞবগনছদঝণঞঘইডঙঔসউষঊপরএঙযঔফখপঘধঙথচতজঢটঠঞ';
-const jsonData = '';
-const container = document.querySelector('.container');
-const output = document.getElementById('output');
+	const alphabets = ["ங","ச","வ","ற","ஞ","ந","ஜ","ஆ","க","ம","த","ஔ","ர","ழ","வ","ள","ன","ஜ","ப","ஹ","ஞ","க்ஷ","அ","ச","உ","எ","ந","ஹ","ஆ","த","ஏ","ன","ஓ","க","வ","ண","ஔ","ட","ர","ஷ","த","எ","ப","ய","ல","ஐ","ழ","ற","ஷ","க","ஜ","ஸ","ஆ","இ","ர","ங","ஈ","க்ஷ","வ","ட","ஊ","ஐ","ர","க","ஒ","ற","த","வ","ள","ஔ"];
 
 let currentIndex = 0;
-let isAlphabet = true;
 
-function displayData() {
-    if (isAlphabet) {
-        output.textContent = alphabet[currentIndex];
-    } else {
-        output.textContent = jsonData;
-    }
-
-    currentIndex = (currentIndex + 1) % alphabet.length;
-    isAlphabet = !isAlphabet;
+function displayNextAlphabet() {
+    document.getElementById("alphabet").textContent = alphabets[currentIndex];
+    currentIndex = (currentIndex + 1) % alphabets.length;
 }
 
-// Display the first item
-displayData();
+setInterval(displayNextAlphabet, 2000); // Change alphabet every second
 
-// Set an interval to switch between alphabet and JSON every 2 seconds
-setInterval(displayData, 1000);
 
 	</script>
 </body>
