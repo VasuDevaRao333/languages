@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target Page</title>
+</head>
+
+<body>
+    <div id="imported-content"></div>
+
+    <script>
+        // Fetch the content of source.html
+        fetch('source.html')
+            .then(response => response.text())
+            .then(html => {
+                // Insert the fetched content into the target page
+                document.getElementById('imported-content').innerHTML = html;
+            })
+            .catch(error => console.error('Error fetching the content:', error));
+    </script>
+</body>
+
+</html>
