@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open New Div with Content and ScrollView</title>
+    <style>
+        /* Style for the button */
+        .openButton {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        /* Style for the new div */
+        .newDiv {
+            display: none;
+            background-color: #f1f1f1;
+            padding: 20px;
+            overflow-y: auto;
+            /* Enable vertical scrollbar */
+            max-height: 200px;
+            /* Set maximum height for scrollbar */
+        }
+
+        /* CSS Styling */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive Styling */
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .container {
+                width: 95%;
+            }
+        }
+
+        pre {
+            background-color: #a3efa5;
+            color: black;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        function openNewDiv(index) {
+            var newDiv = document.getElementById("newDiv_" + index);
+            if (newDiv.style.display === "none") {
+                newDiv.style.display = "block";
+            } else {
+                newDiv.style.display = "none";
+            }
+        }
+    </script>
+
+    <!-- Generate 10 buttons with responsive content -->
+    <div id="buttonsContainer">
+        <!-- Button 1 -->
+        <button class="openButton" onclick="openNewDiv(1)">Open Exercise 1</button>
+        <div class="newDiv" id="newDiv_1">
+            <div class="container">
+                <h2>Exercise 1</h2>
+                <pre>
+                    मैं = నేను
+
+                    हम = మేము, మనము
+
+                    तू = నీవు
+
+                    तुम = నీవు, మీరు
+
+                    आप = తమరు
+
+                    वह = అతడు, ఆమె, అది, ఆ
+
+                    यह = ఇతడు, ఈమె, ఇది, ఈ
+
+                    वे = వారు, అవి, ఆ
+
+                    ये = వీరు, ఇవి, ఈ
+
+                    हूँ। = ఉన్నాను.
+
+                    हो। = వున్నావు.
+
+                    है। = వున్నది, ఉన్నాడు.
+
+                    हैं। = వున్నవి, వున్నారు.
+
+    1. मैं लडका हूँ। = నేను బాలుడను.
+
+    2. हम आदमी हैं। = మేము మనుష్యులము.
+
+    3. तुम लडकी हो। = నీవు బాలికవ.
+
+    4. आप कौन हैं? = తమరు ఎవరు?
+
+    5. वह किताब है। = అది పుస్తకము
+
+    6. यह दवात है। = ఇది సిరాబుడ్డి.
+
+    7. वे क्या हैं? = అవి ఏమిటి?
+
+    8. ये नक्षत्र हैं। = ఇవి నక్షత్రములు.
+
+    9. कुत्ता कहाँ है? = కుక్క ఎక్కడ వున్నది?
+
+    10. दीवार पर बिल्ली है। = గోడ మీద పిల్లి వున్నది.
+                </pre>
+            </div>
+        </div>
+
+        <!-- Button 2 -->
+        <button class="openButton" onclick="openNewDiv(2)">Open Exercise 2</button>
+        <div class="newDiv" id="newDiv_2">
+            <h2>Exercise 2</h2>
+            <pre style="font-size: 15px ">
+
+                मैं फल खाता हूँ। = నేను పండు తినుచున్నాను.
+
+                मैं फल खाती हूँ। = నేను పండు తినుచున్నాను.
+
+                तुम फल खाते हो। = నీవు పండు తినుచున్నావు.
+
+                तुम फल खाती हो। = నీవు పండు తినుచున్నావు.
+
+                वह फल खाता है। = అతడు పండు తినుచున్నాడు.
+
+                वह फल खाती है। = ఆమె పండు తినుచున్నది.
+
+                वे फल खाते हैं। = వారు పండు తినుచున్నారు.
+
+                वे फल खाती हैं। = వారు పండు తినుచున్నారు.
+
+
+    मैं खाता हूँ = నేను తినుచున్నాను. - मैं खा रहा हूँ। = నేను తినుచూ వున్నాను.
+
+    मैं खाती हूँ। = నేను తినుచున్నాను. - मैं खा रही हूँ। = నేను తినుచూ వున్నా.
+
+    तुम खाते हो। = నీవు తినుచున్నావు. - तुम खा रहे हो। = నీవు తినుచూ వున్నావు.
+
+    तुम खाती हो। = నీవు తినుచున్నావు. - तुम खा रही हो। = నీవు తినుచూ ఉన్నావు.
+
+    वह खाता है। = అతడు తినుచున్నాడు. - वह खा रहा है। = అతడు తినుచూ వున్నాడు.
+
+    वह खाती है। = ఆమె తినుచున్నది. - वे खा रही है। = ఆమె తినుచూ వున్నది
+
+    वे खाते हैं। = వారు తినుచున్నారు. - वे खा रहे हैं। = వారు తినుచూ వున్నారు
+
+    वे खाती हैं। = వారు తినుచున్నారు. - वे खा रही हैं। = వారు తినుచూ వున్నారు.
+
+                </pre>
+        </div>
+
+        <!-- Button 3 -->
+        <button class="openButton" onclick="openNewDiv(3)">Open Exercise 3</button>
+        <div class="newDiv" id="newDiv_3">
+            <h2>Vasudev Exercise 3 is not updated</h2><br>
+            <p>This is the content of the new div 3. It can contain any HTML elements.</p>
+        </div>
+
+        <!-- Button 4 -->
+        <button class="openButton" onclick="openNewDiv(4)">Open Exercise 4</button>
+        <div class="newDiv" id="newDiv_4">
+            <h2>Vasudev Exercise 4 is not updated</h2><br>
+            <p>This is the content of the new div 4. It can contain any HTML elements.</p>
+        </div>
+
+        <!-- Button 5 -->
+        <button class="openButton" onclick="openNewDiv(5)">Open Exercise 5</button>
+        <div class="newDiv" id="newDiv_5">
+            <h2>Vasudev Exercise 5 is not updated</h2><br>
+            <p>This is the content of the new div 5. It can contain any HTML elements.</p>
+        </div>
+
+        <!-- Button 6 -->
+        <button class="openButton" onclick="openNewDiv(6)">Open Exercise 6</button>
+        <div class="newDiv" id="newDiv_6">
+            <h2>Vasudev Exercise 6 is not updated</h2><br>
+            <p>This is the content of the new div 6. It can contain any HTML elements.</p>
+        </div>
+
+        <!-- Button 7 -->
+        <button class="openButton" onclick="openNewDiv(7)">Open Exercise 7</button>
+        <div class="newDiv" id="newDiv_7">
+            <h2>Vasudev Exercise 7 is not updated</h2><br>
+            <p>This is the content of the new div 7. It can contain any HTML elements.</p>
+        </div>
+
+        <!-- Button 8 -->
+        <button class="openButton" onclick="openNewDiv(8)">Open Exercise 8</button>
+        <div class="newDiv" id="newDiv_8">
+            <h2>Vasudev Exercise 8 is not updated</h2><br>
+            <p>This is the content of the new div 8. It can contain any HTML elements.</p>
+        </div>
+
+        <!-- Button 9 -->
+        <button class="openButton" onclick="openNewDiv(9)">Open Exercise 9</button>
+        <div class="newDiv" id="newDiv_9">
+            <h2>Vasudev Exercise 9 is not updated</h2><br>
+            <p>This is the content of the new div 9. It can contain any HTML elements.</p>
+        </div>
+
+        <!-- Button 10 -->
+        <button class="openButton" onclick="openNewDiv(10)">Open Exercise 10</button>
+        <div class="newDiv" id="newDiv_10">
+            <h2>Vasudev Exercise 10 is not updated</h2><br>
+            <p>This is the content of the new div 10. It can contain any HTML elements.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

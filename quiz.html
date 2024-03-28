@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz</title>
+    <style>
+        .quiz-container {
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        #timer {
+            margin-top: 20px;
+        }
+
+        #certificate {
+            display: none;
+            animation: slideIn 0.5s ease forwards;
+        }
+
+        /* Certificate Styles */
+        .certificate {
+            border: 2px solid #333;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            animation: fadeIn 1s ease forwards;
+        }
+
+        .certificate h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .certificate p {
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .certificate .signature {
+            margin-top: 20px;
+            font-style: italic;
+            color: #777;
+        }
+
+        #downloadBtn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #downloadBtn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        button:hover {
+            background-color: #844444;
+            color: aqua;
+            font-size: 20px;
+            font-weight: 900;
+        }
+
+        button {
+            font-size: 15px;
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="quiz-container">
+        <div id="question-container">
+            <p id="question" style="font-size:20px; font-weight: 700;font-style:oblique">
+            </p>
+        </div>
+        <div id="answers">
+            <button class="btn" onclick="checkAnswer(0)"></button>
+            <button class="btn" onclick="checkAnswer(1)"></button>
+            <button class="btn" onclick="checkAnswer(2)"></button>
+            <button class="btn" onclick="checkAnswer(3)"></button>
+        </div>
+        <div id="timer">Time Left: <span id="time">30:00</span></div>
+        <div id="result" style="display: none;">
+            <p id="quiz-result"></p>
+            <form id="result-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="certificate">
+                <div class="certificate" id="certificate-content">
+                    <h2>Certificate of Achievement</h2>
+                    <p>This certificate is awarded to</p>
+                    <p id="certificate-name"
+                        style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"></p>
+                    <p>For successfully completing the quiz with a score of <span id="certificate-score"></span>.</p>
+                    <p class="signature" style="font-style:oblique">Signature:
+                        Vasudev</p>
+                </div>
+                <button id="downloadBtn">Download Certificate</button>
+            </div>
+        </div>
+    </div>
+    <script src="questions.js"></script>
+    <script>
+        let currentQuestion = 0;
+        let score = 0;
+        let alternateQuestions = false; // Flag to alternate between sets of questions
+        const questionsSet1 = [
+            {
+                question: "What is the infinitive form of the verb ' to eat ' in Hindi?",
+                answers: ["जीतना", "खाना", "बचाना", "दिखाना"],
+                correct: 1
+            },
+            {
+                question: "Translate 'to go' into Hindi.",
+                answers: ["आना", "करना", "जाना", "चलना"],
+                correct: 2
+            },
+            {
+                question: "Which verb means 'to drink' in Hindi?",
+                answers: ["सीखना", "पीना", "पूछना", "खोलना"],
+                correct: 1
+            },
+            {
+                question: "How do you say 'to sleep' in Hindi?",
+                answers: ["छोड़ना", "भरोसा", "खेलना", "सोना"],
+                correct: 3
+            },
+            {
+                question: "What is the Hindi word for 'to read'?",
+                answers: ["पढ़ना", "लिखना", "रहना", "सोचना"],
+                correct: 0
+            },
+            {
+                question: "Translate 'to write' into Hindi.",
+                answers: ["पीना", "पढ़ना", "लिखना", "खोलना"],
+                correct: 2
+            },
+            {
+                question: "What is the verb for 'to learn' in Hindi?",
+                answers: ["चलना", "सीखना", "लिखना", "छोड़ना"],
+                correct: 1
+            },
+            {
+                question: "How do you express 'to run' in Hindi?",
+                answers: ["खेलना", "पकडना", "छोड़ना", "भागना"],
+                correct: 3
+            },
+            {
+                question: "What is the Hindi verb for 'to laugh'?",
+                answers: ["भेजना", "हसना", "पढ़ना", "खोलना"],
+                correct: 1
+            },
+            {
+                question: "Translate 'to send' into Hindi.",
+                answers: ["भेजना", "पकडना", "लिखना", "खोलना"],
+                correct: 0
+            },
+            {
+                question: "What is the infinitive form of the verb 'to eat' in Hindi?",
+                answers: ["खेलना", "चलना", "खाना", "पीना"],
+                correct: 2
+            },
+            {
+                question: "Choose the correct conjugation for the verb 'to go' (जाना) in the present tense for 'he/she':",
+                answers: ["जाता है", "जाते हैं", "जाती है", "जाती हैं"],
+                correct: 1
+            },
+            {
+                question: "What is the past tense of the verb 'to speak' (बोलना)?",
+                answers: ["बोलता था", "बोलते थे", "बोला था", "बोली थी"],
+                correct: 2
+            },
+            {
+                question: "Select the correct future tense conjugation of the verb 'to read' (पढ़ना) for 'we':",
+                answers: ["पढ़ेंगे", "पढ़ेंगी", "पढ़ेंगा", "पढ़ेंगीं"],
+                correct: 0
+            },
+            {
+                question: "Which verb means 'to sleep' in Hindi?",
+                answers: ["खेलना", "उठना", "भागना", "सोना"],
+                correct: 3
+            }
+        ];
+
+        function showQuestion() {
+            const questionContainer = document.getElementById('question');
+            const answerButtons = document.querySelectorAll('.btn');
+            const currentQuestions = alternateQuestions ? questionsSet2 : questionsSet1;
+
+            if (currentQuestion < currentQuestions.length) {
+                questionContainer.textContent = currentQuestions[currentQuestion].question;
+                answerButtons.forEach((button, index) => {
+                    button.textContent = currentQuestions[currentQuestion].answers[index];
+                });
+            } else {
+                endQuiz();
+            }
+        }
+
+        function checkAnswer(answerIndex) {
+            const currentQuestions = alternateQuestions ? questionsSet2 : questionsSet1;
+            if (answerIndex === currentQuestions[currentQuestion].correct) {
+                score++;
+            }
+            currentQuestion++;
+            showQuestion();
+        }
+
+        function startTimer(duration, display) {
+            let timer = duration, minutes, seconds;
+            const countdown = setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    clearInterval(countdown);
+                    endQuiz();
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            const timerDisplay = document.getElementById('time');
+            const timerDuration = 30 * 60;
+            startTimer(timerDuration, timerDisplay);
+            showQuestion();
+        };
+
+        function endQuiz() {
+            const questionContainer = document.getElementById('question-container');
+            const answersContainer = document.getElementById('answers');
+            const timerContainer = document.getElementById('timer');
+            const resultContainer = document.getElementById('result');
+            const resultText = document.getElementById('quiz-result');
+            const certificateContainer = document.getElementById('certificate');
+
+            questionContainer.innerHTML = `<p>Quiz Complete! Your Score: ${score}/${questionsSet1.length}</p>`;
+            answersContainer.innerHTML = '';
+            timerContainer.style.display = 'none';
+            resultContainer.style.display = 'block';
+
+            resultText.textContent = `Name: _________________ Score: ${score}/${questionsSet1.length}`;
+
+            certificateContainer.style.display = 'block';
+            generateCertificate();
+        }
+
+        function generateCertificate() {
+            const nameInput = document.getElementById('name');
+            const certificateName = document.getElementById('certificate-name');
+            const certificateScore = document.getElementById('certificate-score');
+            const downloadBtn = document.getElementById('downloadBtn');
+
+            certificateName.textContent = nameInput.value;
+            certificateScore.textContent = `${score}/${questionsSet1.length}`;
+
+            // Trigger download when download button is clicked
+            downloadBtn.addEventListener('click', function () {
+                const certificateContainer = document.getElementById('certificate-content');
+                const certificateData = certificateContainer.outerHTML;
+                const blob = new Blob([certificateData], { type: 'text/html' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'certificate.html';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            });
+        }
+
+        // Handle form submission
+        document.getElementById('result-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            generateCertificate();
+        });
+
+        // Reset quiz when the certificate is closed
+        document.getElementById('downloadBtn').addEventListener('click', function () {
+            currentQuestion = 0;
+            score = 0;
+            alternateQuestions = !alternateQuestions; // Toggle between question sets
+            const questionContainer = document.getElementById('question-container');
+            const answersContainer = document.getElementById('answers');
+            const timerContainer = document.getElementById('timer');
+            const resultContainer = document.getElementById('result');
+
+            questionContainer.innerHTML = '';
+            answersContainer.innerHTML = '';
+            timerContainer.style.display = 'block';
+            resultContainer.style.display = 'none';
+            showQuestion();
+        });
+
+    </script>
+
+
+</body>
+
+</html>
