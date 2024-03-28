@@ -102,6 +102,22 @@
             font-size: 15px;
             font-weight: 800;
         }
+
+
+        /* Media query for responsiveness */
+        @media only screen and (max-width: 600px) {
+            .certificate {
+                padding: 10px;
+            }
+
+            .certificate h2 {
+                font-size: 20px;
+            }
+
+            .certificate #certificate-name {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 
@@ -126,18 +142,26 @@
                 <button type="submit">Submit</button>
             </form>
             <div id="certificate">
-                <div class="certificate" id="certificate-content">
-                    <h2>Certificate of Achievement</h2>
-                    <p>This certificate is awarded to</p>
+                <div class="certificate" id="certificate-content"
+                    style="border: 1px solid black; max-width: 100%; padding: 20px;">
+                    <h2 style="font-size: 24px; text-align: center;">Certificate of Achievement</h2>
+                    <p style="text-align: center;">This certificate is awarded to</p>
                     <p id="certificate-name"
-                        style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"></p>
-                    <p>For successfully completing the quiz with a score of <span id="certificate-score"></span>.</p>
-                    <p class="signature" style="font-style:oblique">Signature:
+                        style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 18px; text-align:center;">
+                    </p>
+                    <p style="text-align:center;">For successfully completing the quiz <span id="course-name"></span>
+                        with a score of <span id="certificate-score"></span>.
+                        <br><br> <span id="certificate-date"></span>
+                    </p>
+                    <p class="signature" style="font-style: oblique; font-style: italic; text-align: right;">Signature:
                         Vasudev</p>
                 </div>
                 <button id="downloadBtn">Download Certificate</button>
+
             </div>
+
         </div>
+    </div>
     </div>
     <script src="questions.js"></script>
     <script>
@@ -220,6 +244,7 @@
                 answers: ["खेलना", "उठना", "भागना", "सोना"],
                 correct: 3
             }
+
         ];
 
         function showQuestion() {
@@ -294,10 +319,22 @@
             const nameInput = document.getElementById('name');
             const certificateName = document.getElementById('certificate-name');
             const certificateScore = document.getElementById('certificate-score');
+            const certificateDate = document.getElementById('certificate-date');
+            const courseName = document.getElementById('course-name');
             const downloadBtn = document.getElementById('downloadBtn');
 
             certificateName.textContent = nameInput.value;
             certificateScore.textContent = `${score}/${questionsSet1.length}`;
+            courseName.textContent = "Hindi Language"; // Set your actual course name here
+
+            // Set the certificate date
+            const currentDate = new Date();
+            const formattedDate = currentDate.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            certificateDate.textContent = formattedDate;
 
             // Trigger download when download button is clicked
             downloadBtn.addEventListener('click', function () {
@@ -314,6 +351,8 @@
                 URL.revokeObjectURL(url);
             });
         }
+
+
 
         // Handle form submission
         document.getElementById('result-form').addEventListener('submit', function (event) {
