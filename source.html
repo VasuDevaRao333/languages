@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hindi Learning Game</title>
+    <style>
+        #timer {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HTML -->
+    <div id="questionDisplay">
+        <div id="question"></div>
+        <div id="options"></div>
+    </div>
+    <div id="scoreDisplay">
+        <div id="score">Score: <span id="score-value">0</span></div>
+    </div>
+    <div id="timer">Time Left: <span id="time-left">60</span> seconds</div>
+
+    <script>
+        // JavaScript
+        const vocabulary = {
+            "आम": "Mango",
+            "सेब": "Apple",
+            // Add more words as needed
+        };
+
+        let score = 0;
+        let timeLeft = 60;
+        let currentQuestion;
+
+        function displayQuestion() {
+            // Generate a random question
+            const hindiWords = Object.keys(vocabulary);
+            const randomIndex = Math.floor(Math.random() * hindiWords.length);
+            const hindiWord = hindiWords[randomIndex];
+            const englishTranslation = vocabulary[hindiWord];
+            currentQuestion = hindiWord;
+
+            // Display the question
+            document.getElementById("question").textContent = hindiWord;
+
+            // Display options (randomly shuffle)
+            const options = [englishTranslation];
+            while (options.length < 4) {
+                const randomWord = hindiWords[Math.floor(Math.random() * hindiWords.length)];
+                if (!options.includes(randomWord)) {
+                    options.push(vocabulary[randomWord]);
+                }
+            }
+            options.sort(() => Math.random() - 0.5);
+
+            const optionsContainer = document.getElementById("options");
+            optionsContainer.innerHTML = "";
+            options.forEach(option => {
+                const button = document.createElement("button");
+                button.textContent = option;
+                button.onclick = () => checkAnswer(option);
+                optionsContainer.appendChild(button);
+            });
+        }
+
+        function checkAnswer(selectedOption) {
+            if (selectedOption === vocabulary[currentQuestion]) {
+                score++;
+            }
+            document.getElementById("score-value").textContent = score;
+            displayQuestion();
+        }
+
+        function startTimer() {
+            const timerInterval = setInterval(() => {
+                timeLeft--;
+                document.getElementById("time-left").textContent = timeLeft;
+
+                if (timeLeft === 0) {
+                    clearInterval(timerInterval);
+                    endGame();
+                }
+            }, 1000);
+        }
+
+        function endGame() {
+            alert(`Game Over!\nYour Score: ${score}`);
+            score = 0;
+            timeLeft = 60;
+            document.getElementById("score-value").textContent = score;
+            displayQuestion();
+            startTimer();
+        }
+
+        // Start the game
+        displayQuestion();
+        startTimer();
+    </script>
+</body>
+
+</html>
