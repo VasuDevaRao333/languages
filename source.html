@@ -10,25 +10,82 @@
             font-size: 20px;
             margin-bottom: 10px;
         }
+
+
+
+        .main {
+            color: blue;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        /* Style for options buttons */
+        .option-btn {
+            display: block;
+            margin: 5px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: aqua;
+            border-radius: 5px;
+            font-weight: 700;
+        }
+
+        .option-btn:hover {
+            background-color: white;
+            color: black;
+        }
     </style>
 </head>
 
 <body>
     <!-- HTML -->
-    <div id="questionDisplay">
+    <div class="main" id="questionDisplay">
         <div id="question"></div>
         <div id="options"></div>
     </div>
     <div id="scoreDisplay">
-        <div id="score">Score: <span id="score-value">0</span></div>
+        <div style="font-size: 20px; text-align: center; margin: 20px" id="score">Score: <span id="score-value">0</span>
+        </div>
     </div>
-    <div id="timer">Time Left: <span id="time-left">60</span> seconds</div>
+    <div style="text-align: center;" id="timer">Time Left: <span id="time-left">60</span> seconds</div>
 
     <script>
         // JavaScript
         const vocabulary = {
-            "आम": "Mango",
-            "सेब": "Apple",
+            "आम": "మామిడి",
+            "दूध": "పాలు",
+            "रोटी": "రొట్టె",
+            "सेब": "ఆపిల్",
+            "काम": "పని",
+            "पाठ": "పాఠం",
+            "दिन": "రోజు",
+            "रात": "రాత్రి",
+            "आज": "నేడు",
+            "कल": "రేపు,నిన్న",
+            "गर्म": "వేడి",
+            "सुबह": "ఉదయము",
+            "शाम को": "సాయంత్రం",
+            "जल्दी": "త్వరగా",
+            "ठंडा": "చల్లని",
+            "साफ": "శుభ్రము",
+            "कहानी": "కథ",
+            "सच": "నిజము",
+            "झूठ": "అబద్దము",
+            "ज़्यादा": "ఎక్కువ",
+            "धीरे": "నెమ్మదిగా",
+            "स्कूल": "పాఠశాల",
+            "बहुत": "చాలా",
+            "कम": "తక్కువ",
+            "अब": "ఇప్పుడు",
+            "तक": "వరకు",
+            "गीत": "పాట",
+            "इधर": "ఇటు",
+            "उधर": "అటు",
+            "हमेशा": "ఎల్లప్పుడు",
+            "थोड़ा": "కొంచము",
+            "जरूर": "తప్పక",
             // Add more words as needed
         };
 
@@ -62,6 +119,7 @@
             options.forEach(option => {
                 const button = document.createElement("button");
                 button.textContent = option;
+                button.classList.add("option-btn"); // Adding class for styling
                 button.onclick = () => checkAnswer(option);
                 optionsContainer.appendChild(button);
             });
