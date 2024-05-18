@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .game-container {
+    max-width: 800px;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .game-menu {
+    margin-top: 20px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+  }
+
+  .game-board {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .card {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(240, 243, 245);
+    margin: 5px;
+    display: flex;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    box-shadow: 0 9px #afaeae;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.4s;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  .card:active {
+    background-color: #e8e8ee;
+    box-shadow: 0 1px #f0e1e1;
+    color: black;
+    transform: translateY(4px);
+  }
