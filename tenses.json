@@ -1,0 +1,1273 @@
+{
+  "tableData": [
+    {
+      "id": 1,
+      "telugu": "వచ్చుట",
+      "english": "Come",
+      "hindi": "आना",
+      "tamil": "Vaa",
+      "bengali": "Asa",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Vandha(n)",
+          "present": "Vara(n)",
+          "future": "Varuva(n)"
+        },
+        {
+          "subject": "நான்",
+          "past": "வந்தன்",
+          "present": "வறன்",
+          "future": "வருவன்"
+        },
+        {
+          "subject": "Ni",
+          "past": "Vandha",
+          "present": "Vara",
+          "future": "Varuva"
+        },
+        { "subject": "நீ", "past": "வந்த", "present": "வற", "future": "வருவ" },
+        {
+          "subject": "Ningal-P",
+          "past": "Vandhīnga(L)",
+          "present": "Vaṟīnga(L)",
+          "future": "Varuvīnga(L)"
+        },
+        {
+          "subject": "நீங்கள்-P",
+          "past": "வந்தீங்கள்",
+          "present": "வறீங்க(ள்)",
+          "future": "வருவீங்க(ள்)"
+        },
+        {
+          "subject": "Nam",
+          "past": "Vandho(m)",
+          "present": "Vaṟō(m)",
+          "future": "Varuvō~(m)"
+        },
+        {
+          "subject": "நாம்",
+          "past": "வந்தோம்",
+          "present": "வறோ(ம்)",
+          "future": "வருவோ~(ம்)"
+        },
+        {
+          "subject": "Nangal",
+          "past": "Vandho(m)",
+          "present": "Vaṟo(m)",
+          "future": "Varuvō(m)"
+        },
+        {
+          "subject": "நாங்கள்",
+          "past": "வந்தோம்",
+          "present": "வறோ(ம்)",
+          "future": "வருவோ(ம்)"
+        },
+        {
+          "subject": "Avan",
+          "past": "Vandha(n)",
+          "present": "Vaṟā(n)",
+          "future": "Varuvā(n)"
+        },
+        {
+          "subject": "அவன்",
+          "past": "வந்தான்",
+          "present": "வறா(ன்)",
+          "future": "வருவா(ன்)"
+        },
+        {
+          "subject": "Avar-P",
+          "past": "Vandharu",
+          "present": "Vaṟā",
+          "future": "Varuvāru"
+        },
+        {
+          "subject": "அவர்-P",
+          "past": "வந்தாரு",
+          "present": "வறா",
+          "future": "வருவாரு"
+        },
+        {
+          "subject": "Aval",
+          "past": "Vandha(L)",
+          "present": "Vaṟā(L)",
+          "future": "Varuvā(L)"
+        },
+        {
+          "subject": "அவள்",
+          "past": "வந்தா(ள்)",
+          "present": "வறா(ள்)",
+          "future": "வருவா(ள்)"
+        },
+        {
+          "subject": "Avar",
+          "past": "Vandhāru",
+          "present": "Vaṟāru",
+          "future": "Varuvāru"
+        },
+        {
+          "subject": "அவர்",
+          "past": "வந்தாரு",
+          "present": "வறாரு",
+          "future": "வருவாரு"
+        },
+        {
+          "subject": "Adu",
+          "past": "Vandhuccu",
+          "present": "Varudhu",
+          "future": "Varu~(m)"
+        },
+        {
+          "subject": "அது",
+          "past": "வந்துச்சு",
+          "present": "வருது",
+          "future": "வரு~(ம்)"
+        },
+        {
+          "subject": "Avargal",
+          "past": "வந்தாங்க(ள்)",
+          "present": "Vaṟānga(L)",
+          "future": "Varuvānga(L)"
+        },
+        {
+          "subject": "அவர்கள்",
+          "past": "Vandhānga(L)",
+          "present": "வறாங்க(ள்)",
+          "future": "வருவாங்க(ள்)"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "telugu": "వెళ్ళుట",
+      "english": "Go",
+      "hindi": "जाना",
+      "tamil": "Poh",
+      "bengali": "Ja'oẏa",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Pona(n)",
+          "present": "pōṟa~(n)",
+          "future": "pōva~(n)"
+        },
+        {
+          "subject": "நான்",
+          "past": "போனேன்",
+          "present": "போற~(ன்)",
+          "future": "போவ~(ன்)"
+        },
+        { "subject": "Ni", "past": "pōna", "present": "pōṟa", "future": "pōva" },
+        { "subject": "நீ", "past": "போன", "present": "போற", "future": "போவ" },
+        { "subject": "Ningal", "past": "pōnīrgaL", "present": "pōṟīnga~(L)", "future": "pōvīnga(L)" },
+        { "subject": "நீங்கள்-P", "past": "போனீர்கள்", "present": "போறீங்க~(ள்)", "future": "போவீங்க(ள்)" },
+        { "subject": "Nam", "past": "pōnō~(m)", "present": "pōṟō~(m)", "future": "pōvō~(m)" },
+        { "subject": "நாம்", "past": "போனோ~(ம்)", "present": "போறோ~(ம்)", "future": "போவோ~(ம்)" },
+        { "subject": "Nangal", "past": "pōnō~(m)", "present": "pōṟō~(m)", "future": "pōvō~(m)" },
+        { "subject": "நாங்கள்", "past": "போனோ~(ம்)", "present": "போறோ~(ம்)", "future": "போவோ~(ம்)" },
+        { "subject": "Avan", "past": "pōnān", "present": "pōṟā~(n)", "future": "pōvā~(n)" },
+        { "subject": "அவன்", "past": "போனான்", "present": "போறா~(ன்)", "future": "போவா~(ன்)" },
+        { "subject": "Avar-P", "past": "pōnār", "present": "pōṟāru", "future": "pōvāru" },
+        { "subject": "அவர்-P", "past": "போனார்", "present": "போறாரு", "future": "போவாரு" },
+        { "subject": "Aval", "past": "pōnāL", "present": "pōṟā(L)", "future": "pōvā(L)" },
+        { "subject": "அவள்", "past": "போனாள்", "present": "போறா(ள்)", "future": "போவா(ள்)" },
+        { "subject": "avar", "past": "pōnāru", "present": "pōṟāru", "future": "pōvāru" },
+        { "subject": "அவர்", "past": "போனாரு", "present": "போறாரு", "future": "போவாரு" },
+        { "subject": "adu", "past": "pōcchu", "present": "pōvudhu", "future": "pōvu~(m)" },
+        { "subject": "அது", "past": "போச்சு", "present": "போவுது", "future": "போவு~(ம்)" },
+        { "subject": "avargaL", "past": "pōnānga(L)", "present": "pōṟānga(L)", "future": "pōvānga(L)" },
+        { "subject": "அவர்கள்", "past": "போனாங்க(ள்)", "present": "போறாங்க(ள்)", "future": "போவாங்க(ள்)" }
+      ]
+    },
+    {
+      "id": 3,
+      "telugu": "తినుట",
+      "english": "Eat",
+      "hindi": "खाना",
+      "tamil": "Saapidu",
+      "bengali": "khete",
+      "details":[
+        { "subject": "Nan", "past": "Saaptu(n)", "present": "saappidu~(n)", "future": "saappuva~(n)" },
+        { "subject": "நான்", "past": "சாப்பிட்டேன்", "present": "சாப்பிடு~(ன்)", "future": "சாப்புவ~(ன்)" },
+        { "subject": "Ni", "past": "saaptu", "present": "saappidu", "future": "saappuva" },
+        { "subject": "நீ", "past": "சாப்பிட்டாய்", "present": "சாப்பிடு", "future": "சாப்புவாய்" },
+        { "subject": "Ningal", "past": "saaptuṭu", "present": "saappiduṭu", "future": "saappuvaṭu" },
+        { "subject": "நீங்கள்-P", "past": "சாப்பிட்டீர்கள்", "present": "சாப்பிடுங்க~(ள்)", "future": "சாப்புவீங்க(ள்)" },
+        { "subject": "Nam", "past": "saaptuṟō~(m)", "present": "saappiduṟō~(m)", "future": "saappuvaṟō~(m)" },
+        { "subject": "நாம்", "past": "சாப்பிட்டோ~(ம்)", "present": "சாப்பிடுவோ~(ம்)", "future": "சாப்புவோ~(ம்)" },
+        { "subject": "Nangal", "past": "saaptuṟō~(m)", "present": "saappiduṟō~(m)", "future": "saappuvaṟō~(m)" },
+        { "subject": "நாங்கள்", "past": "சாப்பிட்டோ~(ம்)", "present": "சாப்பிடுவோ~(ம்)", "future": "சாப்புவோ~(ம்)" },
+        { "subject": "Avan", "past": "saaptān", "present": "saappidu~(n)", "future": "saappuva~(n)" },
+        { "subject": "அவன்", "past": "சாப்பிட்டான்", "present": "சாப்பிடு~(ன்)", "future": "சாப்புவ~(ன்)" },
+        { "subject": "Avar-P", "past": "saaptār", "present": "saappiduṟāru", "future": "saappuvaṟāru" },
+        { "subject": "அவர்-P", "past": "சாப்பிட்டார்", "present": "சாப்பிடுரு", "future": "சாப்புவாரு" },
+        { "subject": "Aval", "past": "saaptāL", "present": "saappidu~(L)", "future": "saappuva~(L)" },
+        { "subject": "அவள்", "past": "சாப்பிட்டாள்", "present": "சாப்பிடுவா(ள்)", "future": "சாப்புவா(ள்)" },
+        { "subject": "avar", "past": "saaptāru", "present": "saappiduṟāru", "future": "saappuvaṟāru" },
+        { "subject": "அவர்", "past": "சாப்பிட்டாரு", "present": "சாப்பிடுரு", "future": "சாப்புவாரு" },
+        { "subject": "adu", "past": "saapittu", "present": "saappudu", "future": "saappu~(m)" },
+        { "subject": "அது", "past": "சாப்பிட்டு", "present": "சாப்புது", "future": "சாப்பு~(ம்)" },
+        { "subject": "avargaL", "past": "saapittānga(L)", "present": "saappiduṟānga(L)", "future": "saappuvaṟānga(L)" },
+        { "subject": "அவர்கள்", "past": "சாப்பிட்டாங்க(ள்)", "present": "சாப்பிடுராங்க(ள்)", "future": "சாப்புவரங்க(ள்)" }
+      ]
+    },
+    {
+      "id": 4,
+      "telugu": "తీసుకొనుట",
+      "english": "Take",
+      "hindi": "लेना",
+      "tamil": "Eduppu",
+      "bengali": "nin",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Eduthen",
+          "present": "Eduthukkiren",
+          "future": "Eduththupoven"
+        },
+        {
+          "subject": "நான்",
+          "past": "எடுத்தேன்",
+          "present": "எடுத்துக்கிறேன்",
+          "future": "எடுத்துப்போவேன்"
+        },
+        { "subject": "Ni", "past": "", "present": "", "future": "" },
+        { "subject": "நீ", "past": "", "present": "", "future": "" },
+        { "subject": "Ningal", "past": "", "present": "", "future": "" },
+        { "subject": "நீங்கள்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Nam", "past": "", "present": "", "future": "" },
+        { "subject": "நாம்", "past": "", "present": "", "future": "" },
+        { "subject": "Nangal", "past": "", "present": "", "future": "" },
+        { "subject": "நாங்கள்", "past": "", "present": "", "future": "" },
+        { "subject": "Avan", "past": "", "present": "", "future": "" },
+        { "subject": "அவன்", "past": "", "present": "", "future": "" },
+        { "subject": "Avar-P", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Aval", "past": "", "present": "", "future": "" },
+        { "subject": "அவள்", "past": "", "present": "", "future": "" },
+        { "subject": "avar", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்", "past": "", "present": "", "future": "" },
+        { "subject": "adu", "past": "", "present": "", "future": "" },
+        { "subject": "அது", "past": "", "present": "", "future": "" },
+        { "subject": "avargaL", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்கள்", "past": "", "present": "", "future": "" }
+      ]
+    },
+    {
+      "id": 5,
+      "telugu": "ఇచ్చుట",
+      "english": "Give",
+      "hindi": "देना",
+      "tamil": "Kodu",
+      "bengali": "dao",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Koduthen",
+          "present": "Kodukkiren",
+          "future": "Koduppoven"
+        },
+        {
+          "subject": "நான்",
+          "past": "கொடுத்தேன்",
+          "present": "கொடுக்கிறேன்",
+          "future": "கொடுப்போவேன்"
+        },
+        { "subject": "Ni", "past": "", "present": "", "future": "" },
+        { "subject": "நீ", "past": "", "present": "", "future": "" },
+        { "subject": "Ningal", "past": "", "present": "", "future": "" },
+        { "subject": "நீங்கள்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Nam", "past": "", "present": "", "future": "" },
+        { "subject": "நாம்", "past": "", "present": "", "future": "" },
+        { "subject": "Nangal", "past": "", "present": "", "future": "" },
+        { "subject": "நாங்கள்", "past": "", "present": "", "future": "" },
+        { "subject": "Avan", "past": "", "present": "", "future": "" },
+        { "subject": "அவன்", "past": "", "present": "", "future": "" },
+        { "subject": "Avar-P", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Aval", "past": "", "present": "", "future": "" },
+        { "subject": "அவள்", "past": "", "present": "", "future": "" },
+        { "subject": "avar", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்", "past": "", "present": "", "future": "" },
+        { "subject": "adu", "past": "", "present": "", "future": "" },
+        { "subject": "அது", "past": "", "present": "", "future": "" },
+        { "subject": "avargaL", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்கள்", "past": "", "present": "", "future": "" }
+      ]
+    },
+    {
+      "id": 6,
+      "telugu": "చేయుట",
+      "english": "Do",
+      "hindi": "करना",
+      "tamil": "Seyi",
+      "bengali": "kara",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Senjen",
+          "present": "Senjiren",
+          "future": "Senjuven"
+        },
+        {
+          "subject": "நான்",
+          "past": "செய்தேன்",
+          "present": "செய்கிறேன்",
+          "future": "செய்வேன்"
+        },
+        { "subject": "Ni", "past": "", "present": "", "future": "" },
+        { "subject": "நீ", "past": "", "present": "", "future": "" },
+        { "subject": "Ningal", "past": "", "present": "", "future": "" },
+        { "subject": "நீங்கள்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Nam", "past": "", "present": "", "future": "" },
+        { "subject": "நாம்", "past": "", "present": "", "future": "" },
+        { "subject": "Nangal", "past": "", "present": "", "future": "" },
+        { "subject": "நாங்கள்", "past": "", "present": "", "future": "" },
+        { "subject": "Avan", "past": "", "present": "", "future": "" },
+        { "subject": "அவன்", "past": "", "present": "", "future": "" },
+        { "subject": "Avar-P", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Aval", "past": "", "present": "", "future": "" },
+        { "subject": "அவள்", "past": "", "present": "", "future": "" },
+        { "subject": "avar", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்", "past": "", "present": "", "future": "" },
+        { "subject": "adu", "past": "", "present": "", "future": "" },
+        { "subject": "அது", "past": "", "present": "", "future": "" },
+        { "subject": "avargaL", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்கள்", "past": "", "present": "", "future": "" }
+      ]
+    },
+    {
+      "id": 7,
+      "telugu": "తీసుకువచ్చుట",
+      "english": "Bring",
+      "hindi": "लाना",
+      "tamil": "kondu varu",
+      "bengali": "niye asa",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Konduvanden",
+          "present": "Konduvariren",
+          "future": "Konduvaruven"
+        },
+        {
+          "subject": "நான்",
+          "past": "கொண்டுவந்தேன்",
+          "present": "கொண்டுவருகிறேன்",
+          "future": "கொண்டுவரவேன்"
+        },
+        { "subject": "Ni", "past": "", "present": "", "future": "" },
+        { "subject": "நீ", "past": "", "present": "", "future": "" },
+        { "subject": "Ningal", "past": "", "present": "", "future": "" },
+        { "subject": "நீங்கள்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Nam", "past": "", "present": "", "future": "" },
+        { "subject": "நாம்", "past": "", "present": "", "future": "" },
+        { "subject": "Nangal", "past": "", "present": "", "future": "" },
+        { "subject": "நாங்கள்", "past": "", "present": "", "future": "" },
+        { "subject": "Avan", "past": "", "present": "", "future": "" },
+        { "subject": "அவன்", "past": "", "present": "", "future": "" },
+        { "subject": "Avar-P", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Aval", "past": "", "present": "", "future": "" },
+        { "subject": "அவள்", "past": "", "present": "", "future": "" },
+        { "subject": "avar", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்", "past": "", "present": "", "future": "" },
+        { "subject": "adu", "past": "", "present": "", "future": "" },
+        { "subject": "அது", "past": "", "present": "", "future": "" },
+        { "subject": "avargaL", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்கள்", "past": "", "present": "", "future": "" }
+      ]
+    },
+    {
+      "id": 8,
+      "telugu": "మాట్లాడుట",
+      "english": "Talk",
+      "hindi": "बात करना",
+      "tamil": "Pesu",
+      "bengali": "bal",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Pesinen",
+          "present": "Pesugiren",
+          "future": "Pesuven"
+        },
+        {
+          "subject": "நான்",
+          "past": "பேசினேன்",
+          "present": "பேசுகிறேன்",
+          "future": "பேசுவேன்"
+        },
+        { "subject": "Ni", "past": "", "present": "", "future": "" },
+        { "subject": "நீ", "past": "", "present": "", "future": "" },
+        { "subject": "Ningal", "past": "", "present": "", "future": "" },
+        { "subject": "நீங்கள்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Nam", "past": "", "present": "", "future": "" },
+        { "subject": "நாம்", "past": "", "present": "", "future": "" },
+        { "subject": "Nangal", "past": "", "present": "", "future": "" },
+        { "subject": "நாங்கள்", "past": "", "present": "", "future": "" },
+        { "subject": "Avan", "past": "", "present": "", "future": "" },
+        { "subject": "அவன்", "past": "", "present": "", "future": "" },
+        { "subject": "Avar-P", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Aval", "past": "", "present": "", "future": "" },
+        { "subject": "அவள்", "past": "", "present": "", "future": "" },
+        { "subject": "avar", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்", "past": "", "present": "", "future": "" },
+        { "subject": "adu", "past": "", "present": "", "future": "" },
+        { "subject": "அது", "past": "", "present": "", "future": "" },
+        { "subject": "avargaL", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்கள்", "past": "", "present": "", "future": "" }
+      ]
+    },
+    {
+      "id": 9,
+      "telugu": "చూచుట",
+      "english": "See",
+      "hindi": "देखना",
+      "tamil": "Paar",
+      "bengali": "dekha",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Paarthen",
+          "present": "Paarkiren",
+          "future": "Paarpoven"
+        },
+        {
+          "subject": "நான்",
+          "past": "பார்த்தேன்",
+          "present": "பார்க்கிறேன்",
+          "future": "பார்ப்போவேன்"
+        },
+        { "subject": "Ni", "past": "", "present": "", "future": "" },
+        { "subject": "நீ", "past": "", "present": "", "future": "" },
+        { "subject": "Ningal", "past": "", "present": "", "future": "" },
+        { "subject": "நீங்கள்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Nam", "past": "", "present": "", "future": "" },
+        { "subject": "நாம்", "past": "", "present": "", "future": "" },
+        { "subject": "Nangal", "past": "", "present": "", "future": "" },
+        { "subject": "நாங்கள்", "past": "", "present": "", "future": "" },
+        { "subject": "Avan", "past": "", "present": "", "future": "" },
+        { "subject": "அவன்", "past": "", "present": "", "future": "" },
+        { "subject": "Avar-P", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Aval", "past": "", "present": "", "future": "" },
+        { "subject": "அவள்", "past": "", "present": "", "future": "" },
+        { "subject": "avar", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்", "past": "", "present": "", "future": "" },
+        { "subject": "adu", "past": "", "present": "", "future": "" },
+        { "subject": "அது", "past": "", "present": "", "future": "" },
+        { "subject": "avargaL", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்கள்", "past": "", "present": "", "future": "" }
+      ]
+    },
+    {
+      "id": 10,
+      "telugu": "త్రాగుట",
+      "english": "Drink",
+      "hindi": "पीना",
+      "tamil": "kudi",
+      "bengali": "piye",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Kudithen",
+          "present": "Kudikiren",
+          "future": "Kudippen"
+        },
+        {
+          "subject": "நான்",
+          "past": "குடித்தேன்",
+          "present": "குடிக்கிறேன்",
+          "future": "குடிப்பேன்"
+        },
+        { "subject": "Ni", "past": "", "present": "", "future": "" },
+        { "subject": "நீ", "past": "", "present": "", "future": "" },
+        { "subject": "Ningal", "past": "", "present": "", "future": "" },
+        { "subject": "நீங்கள்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Nam", "past": "", "present": "", "future": "" },
+        { "subject": "நாம்", "past": "", "present": "", "future": "" },
+        { "subject": "Nangal", "past": "", "present": "", "future": "" },
+        { "subject": "நாங்கள்", "past": "", "present": "", "future": "" },
+        { "subject": "Avan", "past": "", "present": "", "future": "" },
+        { "subject": "அவன்", "past": "", "present": "", "future": "" },
+        { "subject": "Avar-P", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Aval", "past": "", "present": "", "future": "" },
+        { "subject": "அவள்", "past": "", "present": "", "future": "" },
+        { "subject": "avar", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்", "past": "", "present": "", "future": "" },
+        { "subject": "adu", "past": "", "present": "", "future": "" },
+        { "subject": "அது", "past": "", "present": "", "future": "" },
+        { "subject": "avargaL", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்கள்", "past": "", "present": "", "future": "" }
+      ]
+    },
+    {
+      "id": 11,
+      "telugu": "పడుకొనుట",
+      "english": "Sleep",
+      "hindi": "सोना",
+      "tamil": "Thoongu",
+      "bengali": "ghumano",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Thoongen",
+          "present": "Thoongiren",
+          "future": "Thoonguven"
+        },
+        {
+          "subject": "நான்",
+          "past": "தூங்கினேன்",
+          "present": "தூங்குகிறேன்",
+          "future": "தூங்குவேன்"
+        },
+        { "subject": "Ni", "past": "", "present": "", "future": "" },
+        { "subject": "நீ", "past": "", "present": "", "future": "" },
+        { "subject": "Ningal", "past": "", "present": "", "future": "" },
+        { "subject": "நீங்கள்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Nam", "past": "", "present": "", "future": "" },
+        { "subject": "நாம்", "past": "", "present": "", "future": "" },
+        { "subject": "Nangal", "past": "", "present": "", "future": "" },
+        { "subject": "நாங்கள்", "past": "", "present": "", "future": "" },
+        { "subject": "Avan", "past": "", "present": "", "future": "" },
+        { "subject": "அவன்", "past": "", "present": "", "future": "" },
+        { "subject": "Avar-P", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Aval", "past": "", "present": "", "future": "" },
+        { "subject": "அவள்", "past": "", "present": "", "future": "" },
+        { "subject": "avar", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்", "past": "", "present": "", "future": "" },
+        { "subject": "adu", "past": "", "present": "", "future": "" },
+        { "subject": "அது", "past": "", "present": "", "future": "" },
+        { "subject": "avargaL", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்கள்", "past": "", "present": "", "future": "" }
+      ]
+    },
+    {
+      "id": 12,
+      "telugu": "ప్రారంబించుట",
+      "english": "Start",
+      "hindi": "शुरू",
+      "tamil": "Arambi",
+      "bengali": "shuru",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Arambithen",
+          "present": "Arambikiren",
+          "future": "Arambippoven"
+        },
+        {
+          "subject": "நான்",
+          "past": "ஆரம்பித்தேன்",
+          "present": "ஆரம்பிக்கிறேன்",
+          "future": "ஆரம்பிப்போவேன்"
+        },
+        { "subject": "Ni", "past": "", "present": "", "future": "" },
+        { "subject": "நீ", "past": "", "present": "", "future": "" },
+        { "subject": "Ningal", "past": "", "present": "", "future": "" },
+        { "subject": "நீங்கள்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Nam", "past": "", "present": "", "future": "" },
+        { "subject": "நாம்", "past": "", "present": "", "future": "" },
+        { "subject": "Nangal", "past": "", "present": "", "future": "" },
+        { "subject": "நாங்கள்", "past": "", "present": "", "future": "" },
+        { "subject": "Avan", "past": "", "present": "", "future": "" },
+        { "subject": "அவன்", "past": "", "present": "", "future": "" },
+        { "subject": "Avar-P", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Aval", "past": "", "present": "", "future": "" },
+        { "subject": "அவள்", "past": "", "present": "", "future": "" },
+        { "subject": "avar", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்", "past": "", "present": "", "future": "" },
+        { "subject": "adu", "past": "", "present": "", "future": "" },
+        { "subject": "அது", "past": "", "present": "", "future": "" },
+        { "subject": "avargaL", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்கள்", "past": "", "present": "", "future": "" }
+      ]
+    },
+    {
+      "id": 13,
+      "telugu": "చదువుతా",
+      "english": "Read",
+      "hindi": "पढ़ना",
+      "tamil": "Padi",
+      "bengali": "pora",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Padichen",
+          "present": "Padikiren",
+          "future": "Padippen"
+        },
+        {
+          "subject": "நான்",
+          "past": "படித்தேன்",
+          "present": "படிக்கிறேன்",
+          "future": "படிப்பேன்"
+        },
+        { "subject": "Ni", "past": "", "present": "", "future": "" },
+        { "subject": "நீ", "past": "", "present": "", "future": "" },
+        { "subject": "Ningal", "past": "", "present": "", "future": "" },
+        { "subject": "நீங்கள்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Nam", "past": "", "present": "", "future": "" },
+        { "subject": "நாம்", "past": "", "present": "", "future": "" },
+        { "subject": "Nangal", "past": "", "present": "", "future": "" },
+        { "subject": "நாங்கள்", "past": "", "present": "", "future": "" },
+        { "subject": "Avan", "past": "", "present": "", "future": "" },
+        { "subject": "அவன்", "past": "", "present": "", "future": "" },
+        { "subject": "Avar-P", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Aval", "past": "", "present": "", "future": "" },
+        { "subject": "அவள்", "past": "", "present": "", "future": "" },
+        { "subject": "avar", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்", "past": "", "present": "", "future": "" },
+        { "subject": "adu", "past": "", "present": "", "future": "" },
+        { "subject": "அது", "past": "", "present": "", "future": "" },
+        { "subject": "avargaL", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்கள்", "past": "", "present": "", "future": "" }
+      ]
+    },
+    {
+      "id": 14,
+      "telugu": "వ్రాయుట",
+      "english": "Write",
+      "hindi": "लिखना",
+      "tamil": "Elhuthu",
+      "bengali": "likha",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Ezuthinen",
+          "present": "Ezuthugiren",
+          "future": "Ezuthuven"
+        },
+        {
+          "subject": "நான்",
+          "past": "எழுதினேன்",
+          "present": "எழுதுகிறேன்",
+          "future": "எழுதுவேன்"
+        },
+        { "subject": "Ni", "past": "", "present": "", "future": "" },
+        { "subject": "நீ", "past": "", "present": "", "future": "" },
+        { "subject": "Ningal", "past": "", "present": "", "future": "" },
+        { "subject": "நீங்கள்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Nam", "past": "", "present": "", "future": "" },
+        { "subject": "நாம்", "past": "", "present": "", "future": "" },
+        { "subject": "Nangal", "past": "", "present": "", "future": "" },
+        { "subject": "நாங்கள்", "past": "", "present": "", "future": "" },
+        { "subject": "Avan", "past": "", "present": "", "future": "" },
+        { "subject": "அவன்", "past": "", "present": "", "future": "" },
+        { "subject": "Avar-P", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Aval", "past": "", "present": "", "future": "" },
+        { "subject": "அவள்", "past": "", "present": "", "future": "" },
+        { "subject": "avar", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்", "past": "", "present": "", "future": "" },
+        { "subject": "adu", "past": "", "present": "", "future": "" },
+        { "subject": "அது", "past": "", "present": "", "future": "" },
+        { "subject": "avargaL", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்கள்", "past": "", "present": "", "future": "" }
+      ]
+    },
+    {
+      "id": 15,
+      "telugu": "పంపిచూట",
+      "english": "Send",
+      "hindi": "भेजना",
+      "tamil": "Anuppu",
+      "bengali": "Preran",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Anuppinen",
+          "present": "Anuppugiren",
+          "future": "Anuppuven"
+        },
+        {
+          "subject": "நான்",
+          "past": "அனுப்பினேன்",
+          "present": "அனுப்புகிறேன்",
+          "future": "அனுப்புவேன்"
+        },
+        { "subject": "Ni", "past": "", "present": "", "future": "" },
+        { "subject": "நீ", "past": "", "present": "", "future": "" },
+        { "subject": "Ningal", "past": "", "present": "", "future": "" },
+        { "subject": "நீங்கள்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Nam", "past": "", "present": "", "future": "" },
+        { "subject": "நாம்", "past": "", "present": "", "future": "" },
+        { "subject": "Nangal", "past": "", "present": "", "future": "" },
+        { "subject": "நாங்கள்", "past": "", "present": "", "future": "" },
+        { "subject": "Avan", "past": "", "present": "", "future": "" },
+        { "subject": "அவன்", "past": "", "present": "", "future": "" },
+        { "subject": "Avar-P", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Aval", "past": "", "present": "", "future": "" },
+        { "subject": "அவள்", "past": "", "present": "", "future": "" },
+        { "subject": "avar", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்", "past": "", "present": "", "future": "" },
+        { "subject": "adu", "past": "", "present": "", "future": "" },
+        { "subject": "அது", "past": "", "present": "", "future": "" },
+        { "subject": "avargaL", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்கள்", "past": "", "present": "", "future": "" }
+      ]
+    },
+    {
+      "id": 16,
+      "telugu": "ఉండుట",
+      "english": "Stay",
+      "hindi": "रहना",
+      "tamil": "iru",
+      "bengali": "thakb",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Irunden",
+          "present": "Irikiren",
+          "future": "Iruven"
+        },
+        {
+          "subject": "நான்",
+          "past": "இருந்தேன்",
+          "present": "இருக்கிறேன்",
+          "future": "இருப்பேன்"
+        },
+        { "subject": "Ni", "past": "", "present": "", "future": "" },
+        { "subject": "நீ", "past": "", "present": "", "future": "" },
+        { "subject": "Ningal", "past": "", "present": "", "future": "" },
+        { "subject": "நீங்கள்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Nam", "past": "", "present": "", "future": "" },
+        { "subject": "நாம்", "past": "", "present": "", "future": "" },
+        { "subject": "Nangal", "past": "", "present": "", "future": "" },
+        { "subject": "நாங்கள்", "past": "", "present": "", "future": "" },
+        { "subject": "Avan", "past": "", "present": "", "future": "" },
+        { "subject": "அவன்", "past": "", "present": "", "future": "" },
+        { "subject": "Avar-P", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Aval", "past": "", "present": "", "future": "" },
+        { "subject": "அவள்", "past": "", "present": "", "future": "" },
+        { "subject": "avar", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்", "past": "", "present": "", "future": "" },
+        { "subject": "adu", "past": "", "present": "", "future": "" },
+        { "subject": "அது", "past": "", "present": "", "future": "" },
+        { "subject": "avargaL", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்கள்", "past": "", "present": "", "future": "" }
+      ]
+    },
+    {
+      "id": 17,
+      "telugu": "నవ్వుట",
+      "english": "Laugh",
+      "hindi": "हँसी",
+      "tamil": "Siri",
+      "bengali": "Hasi",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Sirithen",
+          "present": "Sirikiren",
+          "future": "Siruven"
+        },
+        {
+          "subject": "நான்",
+          "past": "சிரித்தேன்",
+          "present": "சிரிக்கிறேன்",
+          "future": "சிருவேன்"
+        },
+        { "subject": "Ni", "past": "", "present": "", "future": "" },
+        { "subject": "நீ", "past": "", "present": "", "future": "" },
+        { "subject": "Ningal", "past": "", "present": "", "future": "" },
+        { "subject": "நீங்கள்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Nam", "past": "", "present": "", "future": "" },
+        { "subject": "நாம்", "past": "", "present": "", "future": "" },
+        { "subject": "Nangal", "past": "", "present": "", "future": "" },
+        { "subject": "நாங்கள்", "past": "", "present": "", "future": "" },
+        { "subject": "Avan", "past": "", "present": "", "future": "" },
+        { "subject": "அவன்", "past": "", "present": "", "future": "" },
+        { "subject": "Avar-P", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Aval", "past": "", "present": "", "future": "" },
+        { "subject": "அவள்", "past": "", "present": "", "future": "" },
+        { "subject": "avar", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்", "past": "", "present": "", "future": "" },
+        { "subject": "adu", "past": "", "present": "", "future": "" },
+        { "subject": "அது", "past": "", "present": "", "future": "" },
+        { "subject": "avargaL", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்கள்", "past": "", "present": "", "future": "" }
+      ]
+    },
+    {
+      "id": 18,
+      "telugu": "నేర్చుకొనుట",
+      "english": "Learn",
+      "hindi": "सीखना",
+      "tamil": "Katrukkol",
+      "bengali": "sekha",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Katrukken",
+          "present": "Katrukolgiren",
+          "future": "Katrukolven"
+        },
+        {
+          "subject": "நான்",
+          "past": "கற்றுக்கொண்டேன்",
+          "present": "கற்றுக்கொள்கிறேன்",
+          "future": "கற்றுக்கொள்வேன்"
+        },
+        { "subject": "Ni", "past": "", "present": "", "future": "" },
+        { "subject": "நீ", "past": "", "present": "", "future": "" },
+        { "subject": "Ningal", "past": "", "present": "", "future": "" },
+        { "subject": "நீங்கள்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Nam", "past": "", "present": "", "future": "" },
+        { "subject": "நாம்", "past": "", "present": "", "future": "" },
+        { "subject": "Nangal", "past": "", "present": "", "future": "" },
+        { "subject": "நாங்கள்", "past": "", "present": "", "future": "" },
+        { "subject": "Avan", "past": "", "present": "", "future": "" },
+        { "subject": "அவன்", "past": "", "present": "", "future": "" },
+        { "subject": "Avar-P", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Aval", "past": "", "present": "", "future": "" },
+        { "subject": "அவள்", "past": "", "present": "", "future": "" },
+        { "subject": "avar", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்", "past": "", "present": "", "future": "" },
+        { "subject": "adu", "past": "", "present": "", "future": "" },
+        { "subject": "அது", "past": "", "present": "", "future": "" },
+        { "subject": "avargaL", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்கள்", "past": "", "present": "", "future": "" }
+      ]
+    },
+    {
+      "id": 19,
+      "telugu": "అడుగుట",
+      "english": "Ask",
+      "hindi": "पूछना",
+      "tamil": "Kett",
+      "bengali": "jigyasa karte",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Ketten",
+          "present": "Kettugiren",
+          "future": "Kettuven"
+        },
+        {
+          "subject": "நான்",
+          "past": "கேட்டேன்",
+          "present": "கேட்கிறேன்",
+          "future": "கேட்பேன்"
+        },
+        { "subject": "Ni", "past": "", "present": "", "future": "" },
+        { "subject": "நீ", "past": "", "present": "", "future": "" },
+        { "subject": "Ningal", "past": "", "present": "", "future": "" },
+        { "subject": "நீங்கள்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Nam", "past": "", "present": "", "future": "" },
+        { "subject": "நாம்", "past": "", "present": "", "future": "" },
+        { "subject": "Nangal", "past": "", "present": "", "future": "" },
+        { "subject": "நாங்கள்", "past": "", "present": "", "future": "" },
+        { "subject": "Avan", "past": "", "present": "", "future": "" },
+        { "subject": "அவன்", "past": "", "present": "", "future": "" },
+        { "subject": "Avar-P", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Aval", "past": "", "present": "", "future": "" },
+        { "subject": "அவள்", "past": "", "present": "", "future": "" },
+        { "subject": "avar", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்", "past": "", "present": "", "future": "" },
+        { "subject": "adu", "past": "", "present": "", "future": "" },
+        { "subject": "அது", "past": "", "present": "", "future": "" },
+        { "subject": "avargaL", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்கள்", "past": "", "present": "", "future": "" }
+      ]
+    },
+    {
+      "id": 20,
+      "telugu": "నడుచుట",
+      "english": "Walk",
+      "hindi": "चलना",
+      "tamil": "Nada",
+      "bengali": "chola",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Nadanden",
+          "present": "Nadagiren",
+          "future": "Nadaven"
+        },
+        {
+          "subject": "நான்",
+          "past": "நடந்தேன்",
+          "present": "நடக்கிறேன்",
+          "future": "நடவேன்"
+        },
+        { "subject": "Ni", "past": "", "present": "", "future": "" },
+        { "subject": "நீ", "past": "", "present": "", "future": "" },
+        { "subject": "Ningal", "past": "", "present": "", "future": "" },
+        { "subject": "நீங்கள்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Nam", "past": "", "present": "", "future": "" },
+        { "subject": "நாம்", "past": "", "present": "", "future": "" },
+        { "subject": "Nangal", "past": "", "present": "", "future": "" },
+        { "subject": "நாங்கள்", "past": "", "present": "", "future": "" },
+        { "subject": "Avan", "past": "", "present": "", "future": "" },
+        { "subject": "அவன்", "past": "", "present": "", "future": "" },
+        { "subject": "Avar-P", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Aval", "past": "", "present": "", "future": "" },
+        { "subject": "அவள்", "past": "", "present": "", "future": "" },
+        { "subject": "avar", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்", "past": "", "present": "", "future": "" },
+        { "subject": "adu", "past": "", "present": "", "future": "" },
+        { "subject": "அது", "past": "", "present": "", "future": "" },
+        { "subject": "avargaL", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்கள்", "past": "", "present": "", "future": "" }
+      ]
+    },
+    {
+      "id": 21,
+      "telugu": "చెప్పుట",
+      "english": "Tell",
+      "hindi": "बताना",
+      "tamil": "Sol",
+      "bengali": "balo",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Sonnaen",
+          "present": "Solgiren",
+          "future": "Solven"
+        },
+        {
+          "subject": "நான்",
+          "past": "சொன்னேன்",
+          "present": "சொல்கிறேன்",
+          "future": "சொல்வேன்"
+        },
+        { "subject": "Ni", "past": "", "present": "", "future": "" },
+        { "subject": "நீ", "past": "", "present": "", "future": "" },
+        { "subject": "Ningal", "past": "", "present": "", "future": "" },
+        { "subject": "நீங்கள்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Nam", "past": "", "present": "", "future": "" },
+        { "subject": "நாம்", "past": "", "present": "", "future": "" },
+        { "subject": "Nangal", "past": "", "present": "", "future": "" },
+        { "subject": "நாங்கள்", "past": "", "present": "", "future": "" },
+        { "subject": "Avan", "past": "", "present": "", "future": "" },
+        { "subject": "அவன்", "past": "", "present": "", "future": "" },
+        { "subject": "Avar-P", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Aval", "past": "", "present": "", "future": "" },
+        { "subject": "அவள்", "past": "", "present": "", "future": "" },
+        { "subject": "avar", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்", "past": "", "present": "", "future": "" },
+        { "subject": "adu", "past": "", "present": "", "future": "" },
+        { "subject": "அது", "past": "", "present": "", "future": "" },
+        { "subject": "avargaL", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்கள்", "past": "", "present": "", "future": "" }
+      ]
+    },
+    {
+      "id": 22,
+      "telugu": "మాట్లాడుట",
+      "english": "Speak",
+      "hindi": "बोलना",
+      "tamil": "Paesu",
+      "bengali": "bolun",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Paesinen",
+          "present": "Paesugiren",
+          "future": "Paesuven"
+        },
+        {
+          "subject": "நான்",
+          "past": "பேசினேன்",
+          "present": "பேசுகிறேன்",
+          "future": "பேசுவேன்"
+        },
+        { "subject": "Ni", "past": "", "present": "", "future": "" },
+        { "subject": "நீ", "past": "", "present": "", "future": "" },
+        { "subject": "Ningal", "past": "", "present": "", "future": "" },
+        { "subject": "நீங்கள்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Nam", "past": "", "present": "", "future": "" },
+        { "subject": "நாம்", "past": "", "present": "", "future": "" },
+        { "subject": "Nangal", "past": "", "present": "", "future": "" },
+        { "subject": "நாங்கள்", "past": "", "present": "", "future": "" },
+        { "subject": "Avan", "past": "", "present": "", "future": "" },
+        { "subject": "அவன்", "past": "", "present": "", "future": "" },
+        { "subject": "Avar-P", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Aval", "past": "", "present": "", "future": "" },
+        { "subject": "அவள்", "past": "", "present": "", "future": "" },
+        { "subject": "avar", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்", "past": "", "present": "", "future": "" },
+        { "subject": "adu", "past": "", "present": "", "future": "" },
+        { "subject": "அது", "past": "", "present": "", "future": "" },
+        { "subject": "avargaL", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்கள்", "past": "", "present": "", "future": "" }
+      ]
+    },
+    {
+      "id": 23,
+      "telugu": "తెలియుట",
+      "english": "Know",
+      "hindi": "पता",
+      "tamil": "Theriyum",
+      "bengali": "jaana",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Therindhen",
+          "present": "Therigiradhu",
+          "future": "Theriyum"
+        },
+        {
+          "subject": "நான்",
+          "past": "தெரிந்தேன்",
+          "present": "தெரிகிறது",
+          "future": "தெரியும்"
+        },
+        { "subject": "Ni", "past": "", "present": "", "future": "" },
+        { "subject": "நீ", "past": "", "present": "", "future": "" },
+        { "subject": "Ningal", "past": "", "present": "", "future": "" },
+        { "subject": "நீங்கள்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Nam", "past": "", "present": "", "future": "" },
+        { "subject": "நாம்", "past": "", "present": "", "future": "" },
+        { "subject": "Nangal", "past": "", "present": "", "future": "" },
+        { "subject": "நாங்கள்", "past": "", "present": "", "future": "" },
+        { "subject": "Avan", "past": "", "present": "", "future": "" },
+        { "subject": "அவன்", "past": "", "present": "", "future": "" },
+        { "subject": "Avar-P", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Aval", "past": "", "present": "", "future": "" },
+        { "subject": "அவள்", "past": "", "present": "", "future": "" },
+        { "subject": "avar", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்", "past": "", "present": "", "future": "" },
+        { "subject": "adu", "past": "", "present": "", "future": "" },
+        { "subject": "அது", "past": "", "present": "", "future": "" },
+        { "subject": "avargaL", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்கள்", "past": "", "present": "", "future": "" }
+      ]
+    },
+    {
+      "id": 24,
+      "telugu": "తెరుచుట",
+      "english": "Open",
+      "hindi": "खोलना",
+      "tamil": "Thira",
+      "bengali": "khola",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Thirandhen",
+          "present": "Thirakkiren",
+          "future": "Thiravum"
+        },
+        {
+          "subject": "நான்",
+          "past": "திறந்தேன்",
+          "present": "திறக்கிறேன்",
+          "future": "திறவுகிறேன்"
+        },
+        { "subject": "Ni", "past": "", "present": "", "future": "" },
+        { "subject": "நீ", "past": "", "present": "", "future": "" },
+        { "subject": "Ningal", "past": "", "present": "", "future": "" },
+        { "subject": "நீங்கள்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Nam", "past": "", "present": "", "future": "" },
+        { "subject": "நாம்", "past": "", "present": "", "future": "" },
+        { "subject": "Nangal", "past": "", "present": "", "future": "" },
+        { "subject": "நாங்கள்", "past": "", "present": "", "future": "" },
+        { "subject": "Avan", "past": "", "present": "", "future": "" },
+        { "subject": "அவன்", "past": "", "present": "", "future": "" },
+        { "subject": "Avar-P", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்-P", "past": "", "present": "", "future": "" },
+        { "subject": "Aval", "past": "", "present": "", "future": "" },
+        { "subject": "அவள்", "past": "", "present": "", "future": "" },
+        { "subject": "avar", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்", "past": "", "present": "", "future": "" },
+        { "subject": "adu", "past": "", "present": "", "future": "" },
+        { "subject": "அது", "past": "", "present": "", "future": "" },
+        { "subject": "avargaL", "past": "", "present": "", "future": "" },
+        { "subject": "அவர்கள்", "past": "", "present": "", "future": "" }
+      ]
+    },
+    {
+      "id": 25,
+      "telugu": "మూసివేయుట",
+      "english": "Close",
+      "hindi": "बंद करना",
+      "tamil": "Moodu",
+      "bengali": "bondha",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Moodinen",
+          "present": "Moodikiren",
+          "future": "Mooduven"
+        },
+        {
+          "subject": "நான்",
+          "past": "மூடினேன்",
+          "present": "மூடுகிறேன்",
+          "future": "மூடுவேன்"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "telugu": "చెప్పుట",
+      "english": "Say",
+      "hindi": "कहना",
+      "tamil": "Sol",
+      "bengali": "bola",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Sonnen",
+          "present": "Solgiren",
+          "future": "Solven"
+        },
+        {
+          "subject": "நான்",
+          "past": "சொன்னேன்",
+          "present": "சொல்கிறேன்",
+          "future": "சொல்வேன்"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "telugu": "చూపించుట",
+      "english": "Show",
+      "hindi": "दिखाना",
+      "tamil": "Kaattu",
+      "bengali": "dekhan",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Kattinen",
+          "present": "Kattugiren",
+          "future": "Kattuven"
+        },
+        {
+          "subject": "நான்",
+          "past": "காட்டினேன்",
+          "present": "காட்டுகிறேன்",
+          "future": "காட்டுவேன்"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "telugu": "వినుట",
+      "english": "Listen",
+      "hindi": "सुनना",
+      "tamil": "Keelu",
+      "bengali": "shunun",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Ketthen",
+          "present": "Ketkiren",
+          "future": "Ketpen"
+        },
+        {
+          "subject": "நான்",
+          "past": "கேட்டேன்",
+          "present": "கேட்கிறேன்",
+          "future": "கேட்பேன்"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "telugu": "వదిలివేయుట",
+      "english": "leave",
+      "hindi": "छोड़ना",
+      "tamil": "Vidu",
+      "bengali": "chhede jete",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Vittuten",
+          "present": "Vitkiren",
+          "future": "Vidpen"
+        },
+        {
+          "subject": "நான்",
+          "past": "விட்டுவிட்டேன்",
+          "present": "விட்டுவிடுகிறேன்",
+          "future": "விட்டுவிடுவேன்"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "telugu": "ఆడుట",
+      "english": "Play",
+      "hindi": "खेलना",
+      "tamil": "vilayatu",
+      "bengali": "khelte",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Vilaiyaden",
+          "present": "Vilaiyadugiren",
+          "future": "Vilaiyaduven"
+        },
+        {
+          "subject": "நான்",
+          "past": "விளையாடினேன்",
+          "present": "விளையாடுகிறேன்",
+          "future": "விளையாடுவேன்"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "telugu": "నమ్మకం",
+      "english": "Trust",
+      "hindi": "भरोसा",
+      "tamil": "nambikkai",
+      "bengali": "bishwash",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Nambinen",
+          "present": "Nambigiren",
+          "future": "Nambuven"
+        },
+        {
+          "subject": "நான்",
+          "past": "நம்பினேன்",
+          "present": "நம்புகிறேன்",
+          "future": "நம்புவேன்"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "telugu": "కాపాడుట",
+      "english": "Save",
+      "hindi": "बचाना",
+      "tamil": "Kaapaatru",
+      "bengali": "bachate",
+      "details": [
+        {
+          "subject": "Nan",
+          "past": "Kaapaatrinen",
+          "present": "Kaapaatrugiren",
+          "future": "Kaapaatruven"
+        },
+        {
+          "subject": "நான்",
+          "past": "காப்பாற்றினேன்",
+          "present": "காப்பாற்றுகிறேன்",
+          "future": "காப்பாற்றுவேன்"
+        }
+      ]
+    }
+  ]
+}

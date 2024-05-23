@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Animation</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        th {
+            background-color: #07f417;
+            color: white;
+        }
+
+        .animate {
+            animation: slideIn 1s forwards;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .search-container {
+            margin-bottom: 20px;
+        }
+
+        .search-container input[type=text] {
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 17px;
+            border: none;
+            width: 95%;
+        }
+
+        .links a {
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            margin-bottom: -10px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        .links {
+            margin-top: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .hidden-table {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><a href="https://vasudev369.free.nf" style="text-decoration: none; color:black;">Dev Learning</a></h1>
+    <div class="links">
+        <a href="./quiz.html">Take a Quiz</a>
+        <a href="./Verbse.html">Go to Exercise</a>
+        <a href="./source.html">Go to Game</a>
+    </div>
+    <div class="search-container">
+        <input type="text" id="myInput" onkeyup="searchTable()"
+            placeholder="Search for Telugu, English, Hindi, Tamil, or Bengali...">
+    </div>
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Telugu</th>
+                <th>English</th>
+                <th>Hindi</th>
+                <th>Tamil</th>
+                <th>Bengali</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div id="details-container"></div>
+
+    <script>
+        // JavaScript to fetch and populate the table
+        async function fetchData() {
+            try {
+                const response = await fetch('tenses.json'); // Path to your JSON file
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                const data = await response.json();
+                populateTable(data);
+            } catch (error) {
+                console.error('There has been a problem with your fetch operation:', error);
+            }
+        }
+
+        // Function to populate the table
+        function populateTable(data) {
+            const tbody = document.querySelector('#myTable tbody');
+            data.tableData.forEach((item, index) => {
+                const tr = document.createElement('tr');
+                tr.classList.add('animate');
+                tr.innerHTML = `
+                    <td>${item.id}</td>
+                    <td>${item.telugu}</td>
+                    <td>${item.english}</td>
+                    <td>${item.hindi}</td>
+                    <td data-details='${JSON.stringify(item.details)}'>${item.tamil}</td>
+                    <td>${item.bengali}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+
+            const rows = document.querySelectorAll('.animate');
+            rows.forEach((row, index) => {
+                setTimeout(() => {
+                    row.classList.add('animate');
+                }, index * 200); // Delay each row's animation
+            });
+
+            // Add click event listener to each td with details
+            const cells = document.querySelectorAll('#myTable td[data-details]');
+            cells.forEach(cell => {
+                cell.addEventListener('click', function () {
+                    const details = JSON.parse(this.getAttribute('data-details'));
+                    const detailsContainer = document.getElementById('details-container');
+                    detailsContainer.innerHTML = `<table class="hidden-table" id="details-table">
+                        <tr>
+                            <th>Subject</th>
+                            <th>Past</th>
+                            <th>Present</th>
+                            <th>Future</th>
+                        </tr>
+                        ${details.map(detail => `
+                        <tr>
+                            <td>${detail.subject}</td>
+                            <td>${detail.past}</td>
+                            <td>${detail.present}</td>
+                            <td>${detail.future}</td>
+                        </tr>`).join('')}
+                    </table>`;
+                    detailsContainer.querySelector('.hidden-table').style.display = 'table';
+                });
+            });
+        }
+
+        // Call the fetchData function on page load
+        window.onload = fetchData;
+
+        // JavaScript for search functionality
+        function searchTable() {
+            // Declare variables
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+
+            // Loop through all table rows, and hide those who don't match the search query
+            for (i = 1; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td");
+                let rowMatches = false;
+                for (var j = 0; j < td.length; j++) {
+                    if (td[j]) {
+                        txtValue = td[j].textContent || td[j].innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            rowMatches = true;
+                            break;
+                        }
+                    }
+                }
+                tr[i].style.display = rowMatches ? "" : "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
