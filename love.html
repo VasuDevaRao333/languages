@@ -1,99 +1,248 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<style>
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <meta charset="UTF-8">
+    <title>Do You Love Me? 💕</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background:linear-gradient(45deg, rgba(77, 124, 185,0.728));
-}
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
 
-#container{
-    position: relative;
-    width: 500px;
-    height: 600px;
-    /* border: 2px solid #333; */
-    margin: 5px;
-    overflow: hidden;
-}
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #ffdde1, #ee9ca7);
+            position: relative;
+        }
 
+        /* Optional background video */
+        video.bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            object-fit: cover;
+            opacity: 0.3;
+        }
 
+        #container {
+            position: relative;
+            width: 90%;
+            max-width: 400px;
+            height: 520px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            text-align: center;
+        }
 
-#yes{
-    /* position: absolute; */
-    /* left: 200px; */
-    background-color: rgb(255,0,0);
-    border: none;
-    width: 90px;
-    border-radius: 10px;
-    font-size: 25px;
-    padding: 8px;
-    cursor: pointer;
-    transition: top 0.5, left 0.5s;
-    margin-top: 25px;
-    color: #fff;
-}
+        h1 {
+            font-size: 28px;
+            color: #d6336c;
+            margin-bottom: 50px;
+        }
 
-img{
-    width: 50px;
-    height: 50px;
-}
+        #yes,
+        #target {
+            width: 100px;
+            padding: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            cursor: pointer;
+            margin: 20px;
+        }
 
-#target{
-    position: absolute;
-    left: 200px;
-    background-color: rgba(0,89,255);
-    border: none;
-    width: 90px;
-    border-radius: 10px;
-    font-size: 25px;
-    padding: 8px;
-    cursor: pointer;
-    margin-top: 25px;
-    transition: top 0.5, left 0.5s;;
-    color: #fff;
-}
-</style>
+        #yes {
+            background-color: #e74c3c;
+        }
+
+        #target {
+            position: absolute;
+            top: 320px;
+            left: 140px;
+            background-color: #3498db;
+        }
+
+        #yes:hover {
+            background-color: #c0392b;
+        }
+
+        #target:hover {
+            animation: bounce 0.3s;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .heart {
+            position: absolute;
+            color: red;
+            animation: floatUp 2s linear forwards;
+            font-size: 24px;
+            pointer-events: none;
+        }
+
+        @keyframes floatUp {
+            0% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateY(-200px) scale(1.5);
+            }
+        }
+
+        /* Popup proposal */
+        #proposalPopup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99;
+            display: none;
+        }
+
+        #proposalPopup .popup {
+            background: #fff;
+            border-radius: 15px;
+            padding: 30px 40px;
+            text-align: center;
+            color: #d6336c;
+            font-size: 24px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-<div id="container">
-<div class="box">
-<h1>Do You Love Me . . .?</h1>
-<button id="target">NO</button>
-<button id="yes">YES</button>
-</div>
-</div>
+    <!-- OPTIONAL: Background video (can be removed if not needed) -->
+    <!-- <video class="bg-video" autoplay muted loop>
+  <source src="https://www.videvo.net/videvo_files/converted/2015_08/preview/Valentines_Day_Background_02Videvo.mov61970.webm" type="video/webm">
+</video> -->
 
+    <div id="container">
+        <h1>Do You Love Me? 💕</h1>
+        <button id="target">NO</button>
+        <button id="yes">YES</button>
+    </div>
 
-<script>
-const target = document.getElementById('target');
-let yes = document.getElementById('yes')
-yes.addEventListener('click',()=> {
-alert("Love you too My Darling");
-})
+    <!-- Popup modal -->
+    <div id="proposalPopup">
+        <div class="popup">
+            💍 Will you marry me, my love? 💖
+        </div>
+    </div>
 
-function moveTarget(){
-    const maxWidth = 400;
-    const maxHeight = 400;
+    <!-- Sound Effects -->
+    <audio id="loveSound" src="https://www.soundjay.com/human/sounds/applause-8.mp3"></audio>
+    <audio id="boingSound" src="https://www.soundjay.com/button/beep-07.wav"></audio>
+    <audio id="bgMusic" src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" loop autoplay></audio>
 
-    const ranomX = Math.floor(Math.random() * maxWidth);
-    const ranomY = Math.floor(Math.random() * maxHeight);
+    <script>
+        const target = document.getElementById('target');
+        const yes = document.getElementById('yes');
+        const container = document.getElementById('container');
+        const loveSound = document.getElementById('loveSound');
+        const boingSound = document.getElementById('boingSound');
+        const proposalPopup = document.getElementById('proposalPopup');
+        const bgMusic = document.getElementById('bgMusic');
 
-    target.style.left = ranomX + 'px';
-    target.style.top = ranomY + 'px';
-}
+        // YES button logic
+        yes.addEventListener('click', () => {
+            loveSound.play();
+            bgMusic.volume = 0.2;
+            for (let i = 0; i < 30; i++) {
+                createHeart();
+            }
 
-target.addEventListener('mouseenter', function(){ moveTarget(); });
+            setTimeout(() => {
+                proposalPopup.style.display = "flex";
+            }, 1000);
+        });
 
-</script>
+        // NO button escape + boing
+        function moveTarget() {
+            const maxX = container.clientWidth - target.offsetWidth;
+            const maxY = container.clientHeight - target.offsetHeight;
+            const randomX = Math.floor(Math.random() * maxX);
+            const randomY = Math.floor(Math.random() * maxY);
+
+            target.style.left = randomX + 'px';
+            target.style.top = randomY + 'px';
+
+            boingSound.currentTime = 0;
+            boingSound.play();
+        }
+
+        target.addEventListener('mouseenter', moveTarget);
+
+        // Create floating heart
+        function createHeart() {
+            const heart = document.createElement("div");
+            heart.classList.add("heart");
+            heart.innerText = "💖";
+            heart.style.left = Math.random() * window.innerWidth + "px";
+            heart.style.top = Math.random() * window.innerHeight + "px";
+            document.body.appendChild(heart);
+            setTimeout(() => heart.remove(), 2000);
+        }
+
+        // Ensure background music plays on mobile
+        document.body.addEventListener('click', () => {
+            bgMusic.play().catch(() => { });
+        }, { once: true });
+    </script>
+
 </body>
+
 </html>
